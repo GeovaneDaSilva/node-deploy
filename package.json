@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
-  
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
@@ -19,6 +17,8 @@
     "brew": "0.0.8",
     "btoa": "^1.2.1",
     "cors": "^2.8.5",
+    "docker": "^1.0.0",
+    "docker-composer": "^4.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
