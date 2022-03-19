@@ -6,7 +6,7 @@ function getUsers(req, res) {
   try {
      res.json({
        ok: true,
-       msg: 'Okay is working'
+       msg: 'Okay is working perfect!'
      })
   } catch (error) {
     console.log(error);
