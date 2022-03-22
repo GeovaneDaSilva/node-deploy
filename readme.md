@@ -32,14 +32,13 @@ tar czf Node.tar.gz node_modules index.js package.json public app.json
 ``` sh 
 Source file : **/*.gz 
 Exec Command 
-mv ./home/ubuntu/one/node-js-sample/Node.tar.gz /home/ubuntu/test/Node.tar.gz;
-cd /home/ubuntu/test/
-tar -xf Node.tar.gz ;
-docker rmi nodeimage;
+mv /var/lib/jenkins/workspace/
+cd /var/lib/jenkins/workspace/node-deploy
+docker rmi -f nodeimage;
 docker stop nodecontainer;
 docker rm nodecontainer;
 docker build -t nodeimage .;
-docker run -d --name nodecontainer -p 5001:5000 nodeimage;
+docker run -d -p 3050:3000 --name nodecontainer nodeimage;
 ```
 ##### Step 5 - Docker File in Node Js server 
 ``` sh 
