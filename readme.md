@@ -29,6 +29,8 @@ BUILD - npm install  // to download all the dependecines
 ```
 ##### Step 4 - Post Build Action Define below details.
 ``` sh 
+source files **/*.gz
+remote directory
 Exec Command 
 mv /var/lib/jenkins/workspace/
 cd /var/lib/jenkins/workspace/node-deploy
@@ -57,6 +59,12 @@ CMD ["npm", "start"]
 
 ##### Step 6:? - Issues
 ```
- https://stackoverflow.com/questions/26600769/build-context-for-docker-image-very-large
+ Permissions
+ https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
  
+ https://stackoverflow.com/questions/26600769/build-context-for-docker-image-very-large
+
+ Docker install linux
+ https://askubuntu.com/questions/1273024/docker-io-depends-containerd-1-2-6-0ubuntu1
+ https://stackoverflow.com/questions/44678725/cannot-connect-to-the-docker-daemon-at-unix-var-run-docker-sock-is-the-docker
  ```
