@@ -43,12 +43,19 @@ docker run -d --name nodecontainer -p 5001:5000 nodeimage;
 ```
 ##### Step 5 - Docker File in Node Js server 
 ``` sh 
-FROM node:latest
-MAINTAINER Abhishek Modi 
-RUN echo "Tryin to build my first application"
-COPY . /var/www
-WORKDIR /var/www
+FROM node:12.22.10
+
+WORKDIR /usr/app
+
+COPY package*.json ./
+
 RUN npm install
-EXPOSE 3000
-ENTRYPOINT ["npm","start"]
+
+COPY ./ .
+
+EXPOSE 3050
+
+CMD ["npm", "start"]
 ```
+
+##ISSUES https://stackoverflow.com/questions/26600769/build-context-for-docker-image-very-large
