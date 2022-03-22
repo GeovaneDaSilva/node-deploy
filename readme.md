@@ -25,12 +25,10 @@ Click Save and Apply
 Git URL - https://github.com/Abhishek08/node-js-sample.git
 WebHook Connection URL - http://IPADDRESS/github-webhook/ (push)
 BUILD - npm install  // to download all the dependecines 
-      - npm test  // to perform test case execution 
-tar czf Node.tar.gz node_modules index.js package.json public app.json     
+  
 ```
 ##### Step 4 - Post Build Action Define below details.
 ``` sh 
-Source file : **/*.gz 
 Exec Command 
 mv /var/lib/jenkins/workspace/
 cd /var/lib/jenkins/workspace/node-deploy
@@ -57,4 +55,8 @@ EXPOSE 3050
 CMD ["npm", "start"]
 ```
 
-##ISSUES https://stackoverflow.com/questions/26600769/build-context-for-docker-image-very-large
+##### Step 6:? - Issues
+```
+ https://stackoverflow.com/questions/26600769/build-context-for-docker-image-very-large
+ 
+ ```
