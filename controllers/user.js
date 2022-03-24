@@ -8,6 +8,8 @@ function getUsers(req, res) {
      res.json({
        ok: true,
        msg: 'Perfect deployment 100% work great!'
+
+
      })
   } catch (error) {
     console.log(error);
