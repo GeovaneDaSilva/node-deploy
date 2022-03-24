@@ -22,7 +22,7 @@ Click Save and Apply
 ```
 ##### Step 3 -  Create the Free Style Node JS project .
 ``` sh 
-Git URL - https://github.com/GeovaneDaSilva/node-deploy.git
+Git URL - https://%7Btoken%7D@github.com/GeovaneDaSilva/node-deploy.git/
 WebHook Connection URL - http://IPADDRESS/github-webhook/ (push)
 BUILD - npm install  // to download all the dependecines 
   
