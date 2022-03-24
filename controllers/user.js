@@ -7,7 +7,9 @@ function getUsers(req, res) {
   try {
      res.json({
        ok: true,
-       msg: 'Perfect deployment 100% Work with jenkins in the other computer aws settings'
+       msg: 'Perfect deployment 100% work great!'
+
+
      })
   } catch (error) {
     console.log(error);
