@@ -1,3 +1,4 @@
+
 "use strict";
 
 
@@ -6,7 +7,7 @@ function getUsers(req, res) {
   try {
      res.json({
        ok: true,
-       msg: 'Okay is working perfect Production'
+       msg: 'Perfect deployment 100% work great perfect!'
      })
   } catch (error) {
     console.log(error);
@@ -14,9 +15,10 @@ function getUsers(req, res) {
   }
    
   }
-
+//
 
 module.exports = {
   getUsers,
 
 };
+
